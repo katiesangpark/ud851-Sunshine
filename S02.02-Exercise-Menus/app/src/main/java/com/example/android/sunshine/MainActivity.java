@@ -103,15 +103,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    // TODO (5) Override onCreateOptionsMenu to inflate the menu for this Activity
-    // TODO (6) Return true to display the menu
+    // COMPLETED (5) Override onCreateOptionsMenu to inflate the menu for this Activity
+    // COMPLETED (6) Return true to display the menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.forecast, menu);
         return true;
     }
-    // TODO (7) Override onOptionsItemSelected to handle clicks on the refresh button
+    // COMPLETED (7) Override onOptionsItemSelected to handle clicks on the refresh button
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
