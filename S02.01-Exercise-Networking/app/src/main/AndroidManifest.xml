@@ -18,7 +18,7 @@
     package="com.example.android.sunshine">
 
     <!--COMPLETED (2) Add the INTERNET permission-->
-    <uses-permission android:name="android.permission.Internet" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
 
     <application
