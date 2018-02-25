@@ -49,6 +49,10 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
 
     private ProgressBar mLoadingIndicator;
 
+
+    private void openLocationInMap(){
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -220,9 +224,12 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
             loadWeatherData();
             return true;
         }
+        // COMPLETED (2) Launch the map when the map menu item is clicked
 
-        // TODO (2) Launch the map when the map menu item is clicked
-
+        if(id == R.id.action_map) {
+            openLocationInMap();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 }
