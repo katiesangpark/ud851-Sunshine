@@ -41,9 +41,9 @@ import com.example.android.sunshine.utilities.NetworkUtils;
 import com.example.android.sunshine.utilities.OpenWeatherJsonUtils;
 
 import java.net.URL;
-import com.example.android.sunshine.R;
 
-import static android.webkit.ConsoleMessage.MessageLevel.LOG;
+
+
 
 public class MainActivity extends AppCompatActivity implements
         ForecastAdapter.ForecastAdapterOnClickHandler,
