@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--TODO (2) Create an xml resource directory-->
+<!--TODO (3) Add a PreferenceScreen with an EditTextPreference and ListPreference within the newly created xml resource directory-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:lauout_height="match_parent">
+
+    <EditTextPreference
+        android:defaultValue="Mountaion View, CA 94843"
+        android:inputType="text"
+        android:key="location"
+        android:singleLine="true"
+        android:title="Location"/>
+
+    <ListPreference
+        android:defaultValue="metric"
+        android:entries="@array/pref_units_options"
+        android:entryValues="@array/pref_units_values"
+        android:key="units"
+        android:title="Temperature Units"/>
+
+</PreferenceScreen>
