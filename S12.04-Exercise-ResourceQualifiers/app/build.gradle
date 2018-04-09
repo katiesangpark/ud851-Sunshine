@@ -1,24 +1,23 @@
-apply plugin: 'com.android.application'
-
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.2'
+    compileSdkVersion 27
 
     defaultConfig {
-        applicationId "com.example.android.sunshine"
-        minSdkVersion 10
-        targetSdkVersion 25
+        applicationId "com.example.android.boardingpass"
+        minSdkVersion 14
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
+
     buildTypes {
         release {
             minifyEnabled false
         }
     }
 
-    dataBinding.enabled = true
+    dataBinding.enabled=true
+
 }
 
 dependencies {
